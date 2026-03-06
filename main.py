@@ -10,10 +10,13 @@ def greet(n):
 
 def run_count(x, name):
     if not x.isnumeric():
-        return f"I'm sorry, {name}. I can't do that."
+        return error(name)
     for i in range(int(x)):
         print(f"This has run {i+1} times, {name}.")
     return "...And we're done."
+
+def error(name):
+    print(f"I'm sorry, {name}. I can't do that.")
 
 if __name__ == "__main__":
     main()
