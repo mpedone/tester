@@ -1,6 +1,8 @@
 def main():
     print("Hello from tester!")
+    print("I'm not sure why, but that is what the creator asks of me.")
     username = input("What is your name? ")
+    print("Thank you for that, here is your personalized greeting:")
     greet(username)
 
 def greet(n):
